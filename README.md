@@ -23,3 +23,7 @@ quick-clean
 ```
 
 Note: we require the use of `sudo` for the `quick-clean` command.
+
+## Demo
+
+[![quick-drupal demo](https://asciinema.org/a/275245.png)](https://asciinema.org/a/275245)
