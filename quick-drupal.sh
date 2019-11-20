@@ -81,6 +81,11 @@ quick-start() {
   install_drupal
 }
 
+quick-restart() {
+  is_drupal
+  install_drupal
+}
+
 drupal_cleanup() {
   DRUPAL_DIRS=("vendor" "sites/default")
   SUDO=$(command -v sudo)
