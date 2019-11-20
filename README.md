@@ -20,6 +20,7 @@ source ~/.bash_aliases
 
 ```
 quick-start [standard|minimal|umami] <patch>
+quick-restart
 quick-clean
 ```
 
