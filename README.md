@@ -6,6 +6,7 @@ Simply create the following Bash aliases to invoke the script from anywhere.
 
 ```
 alias quick-start='path/to/quick-drupal.sh quick-start'
+alias quick-restart='path/to/quick-drupal.sh quick-restart'
 alias quick-clean='path/to/quick-drupal.sh quick-clean'
 ```
 
