@@ -1,21 +1,21 @@
-name: Run ShellCheck on every PR and commit
+name: Run ShellCheck
 
 on:
   push:
     branches:
-      - master
+      - '*'  # Run on all branches
   pull_request:
     branches:
-      - master
+      - '*'  # Run on all branches
 
 jobs:
   shellcheck:
-    name: Run ShellCheck on every PR and commit
+    name: Run ShellCheck
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Install ShellCheck
       run: sudo apt-get install -y shellcheck
