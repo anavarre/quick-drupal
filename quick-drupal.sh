@@ -66,15 +66,17 @@ function git_cleanup() {
 }
 
 function install_drupal() {
-  COMPOSER=$(command -v composer)
-  PHP=$(command -v php)
+  COMPOSER="$(command -v composer)"
+  PHP="$(command -v php)"
+  DRUPAL="core/scripts/drupal"
+  PROFILE="standard"
   SITENAME="drupal"
   HOST="localhost"
   PORT="8888" # Other option could be $(shuf -i8000-8999 -n1)
 
   if [[ -f "composer.json" ]]; then
-    ${COMPOSER} install
-    ${PHP} ${DRUPAL} quick-start ${PROFILE} --site-name ${SITENAME} --host ${HOST} --port ${PORT}
+    "${COMPOSER}" install
+    "${PHP}" "${DRUPAL}" quick-start "${PROFILE}" --site-name "${SITENAME}" --host "${HOST}" --port "${PORT}"
   fi
 }
 
